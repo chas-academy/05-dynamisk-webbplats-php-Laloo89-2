@@ -1,0 +1,48 @@
+{
+  "": {
+    "controller": "Default",
+    "method": "start"
+  },
+  "login": {
+     "controller": "Admin",
+     "method": "login"
+  },
+  "posts/:page": {
+    "controller": "Post",
+    "method": "getAllWithPage",
+    "params": {
+      "page": "number"
+    }
+  },
+  "posts": {
+    "controller": "Post",
+    "method": "getAll"
+  },
+  "post/:id": {
+    "controller": "Post",
+    "method": "get",
+    "params": {
+      "id": "text"
+    }
+  },
+  "posts/search": {
+    "controller": "Post",
+    "method": "search"
+  },
+  "admins": {
+    "controller": "Admin",
+    "method": "getAll"
+  },
+  "admin/:id": {
+    "controller": "Admin",
+    "method": "get",
+    "params": {
+      "id": "number"
+    }
+  },
+  "my-posts": {
+    "controller": "Post",
+    "method": "getByPost",
+    "login": true
+  }
+}
