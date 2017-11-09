@@ -18,6 +18,10 @@
     public function getEndDate() {
         return $this->end;
     }
+
+    private function createPost() {
+        return $this->post;
+    }
 }
 
 

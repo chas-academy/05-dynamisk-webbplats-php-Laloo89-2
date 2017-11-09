@@ -28,19 +28,19 @@
                 </div>
             <?php endforeach ?>
             <?php else: ?>
-                <section class="jumbotron">
+              <section class="jumbotron">
                     <div class="container">
-                        <h3 class="text-center">Du har inga utlånade böcker, <?php echo $customer->getFullName(); ?></h3>
+                        <h3 class="text-center">There is no posts <?php echo $admin->getFullName(); ?></h3>
                         <div class="row text-center">
                             <div class="col-md-12">
-                                <p>För att låna böcker gå till listan över våra böcker.</p>
+                                <p>Please write a post.</p>
                                         </tr>
                                     <?php endforeach ?>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                </section>
+                </section> 
             <?php endif ?>
         </div>
     </div>

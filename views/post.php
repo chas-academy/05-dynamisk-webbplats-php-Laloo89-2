@@ -1,3 +1,11 @@
+  <section class="jumbotron text-center">
+  <div class="container">
+      <h1 class="jumbotron-heading">Arcive</h1>
+      <p class="lead text-muted">Here you will find all existing posts.</p>
+     
+  </div>
+</section>
+
 <div class="album text-muted">
   <div class="container">
       <div class="row">

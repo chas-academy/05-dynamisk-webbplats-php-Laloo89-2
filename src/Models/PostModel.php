@@ -41,7 +41,7 @@
 
        public function search(string $title): array
        {
-           $query = <<<SQL 
+         $query = <<<SQL 
 SELECT * FROM posts 
 WHERE title LIKE :title
 SQL;

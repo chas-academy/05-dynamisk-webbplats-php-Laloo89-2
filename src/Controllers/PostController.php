@@ -59,7 +59,7 @@
                 'currentPage' => 1,
                 'lastPage' => true
             ];
-            return $this->render('views/posts.php', $properties;
+            return $this->render('views/posts.php', $properties);
         }
 
         public function getByAdmin(): string
@@ -67,7 +67,7 @@
             $postModel = new PostModel();
             $adminModel = new AdminModel();
             
-            $admin = $adminModel-get($this->adminId);)
+            $admin = $adminModel-get($this->adminId);
             $posts = $postModel->getByAdmin($this->adminId);
 
             $properties = [
@@ -75,7 +75,7 @@
                 'posts' => $posts,
                 'currentPage' => 1,
                 'lastPage' => true
-                'isMyPosts' => true
+            /*    'isMyPosts' => true */
             ];
 
             return $this->render('views/posts.php', $properties);

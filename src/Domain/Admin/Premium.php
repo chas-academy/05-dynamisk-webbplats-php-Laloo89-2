@@ -1,11 +1,11 @@
 <?php
 
-namespace Bookstore\Domain\Customer;
+namespace Myblog\Domain\Admin;
 
-use Bookstore\Domain\Customer;
-use Bookstore\Domain\Person;
+use Myblog\Domain\Admin;
+use Myblog\Domain\Viewer;
 
-class Premium extends Person implements Customer {
+class Premium extends Viewer implements Admin {
     public function getMonthlyFee() {
         return 10.0;
     }

@@ -36,7 +36,7 @@ class Router {
             foreach ($info['params'] as $name => $type) {
                 $route = str_replace(':' . $name, self::$regexPatters[$type], $route);
             }
-        }
+        } 
 
         return $route;
     }

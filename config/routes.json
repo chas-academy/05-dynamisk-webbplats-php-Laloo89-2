@@ -29,18 +29,20 @@
     "controller": "Post",
     "method": "search"
   },
-  "admins": {
+  "admin": {
     "controller": "Admin",
-    "method": "getAll"
+    "method": "getAll",
+    "login": true
   },
   "admin/:id": {
     "controller": "Admin",
     "method": "get",
     "params": {
-      "id": "number"
+      "id": "number",
+      "login": true
     }
   },
-  "my-posts": {
+  "myposts": {
     "controller": "Post",
     "method": "getByPost",
     "login": true

@@ -1,3 +1,10 @@
+<?php
+  include_once("../templates/header.html");
+  include_once("../templates/navigation.html");
+  include_once("../templates/footer.html");
+  include_once("posts.php"); 
+  ?>
+
 <div class="album text-muted">
 <div class="container">
     <div class="row">

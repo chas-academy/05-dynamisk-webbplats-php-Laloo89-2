@@ -35,14 +35,14 @@ class AdminController extends AbstractController
 
         setcookie('user', $admin->getId());
 
-        $newController = new BookController($this->request);
-        $this->redirect('/my-books');
+        $newController = new PostController($this->request);
+        $this->redirect('/my-posts');
         return $newController->getAll();
     }
 
     public function getAll(): string
     {
-        $adminModel = new AdminrModel();
+        $adminModel = new AdminModel();
 
         $admins = $adminModel->getAll();
 

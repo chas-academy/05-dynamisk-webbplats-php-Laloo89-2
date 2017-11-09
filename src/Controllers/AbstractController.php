@@ -24,7 +24,10 @@
             extract($params);
             
             ob_start();
-            include $template;
+            include ($_SERVER['DOCUMENT_ROOT'] . '/templates/header.html');
+            include ($_SERVER['DOCUMENT_ROOT'] . '/templates/navigation.html');
+          /*  include $view; */
+            include ($_SERVER['DOCUMENT_ROOT'] . '/templates/footer.html');
             $renderedView = ob_get_clean();
 
             return $renderedView;

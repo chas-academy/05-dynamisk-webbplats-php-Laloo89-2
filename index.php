@@ -1,5 +1,4 @@
 <?php
- 
   use Myblog\Core\Router;
   use Myblog\Core\Request; 
 
@@ -21,3 +20,5 @@
   include_once("templates/navigation.html");
      echo $response;
   include_once("templates/footer.html");
+  include_once("views/layout.php");  
+ 
