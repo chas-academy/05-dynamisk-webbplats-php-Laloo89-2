@@ -19,8 +19,14 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
-  
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-self: center;
+  justify-content: center;
+}
   .jumbotron {
+    width: 70%;
     padding-top: 4rem;
     padding-bottom: 4rem;
     margin-bottom: 0;

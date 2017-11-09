@@ -4,7 +4,7 @@
   include_once("../templates/footer.html");
   include_once("posts.php"); 
   ?>
-
+<section class="wrapper">
 <div class="album text-muted">
 <div class="container">
     <div class="row">
@@ -24,7 +24,7 @@
                     <p class="lead text-muted">Try again!</p>
                     <form class="form-group" action="/posts/search" method="post">
                         <div class="input-group">
-                            <input type="search" name="search" class="form-control" placeholder="Search for posts)">
+                            <input type="search" name="search" class="form-control" placeholder="Search for posts">
                             <span class="input-group-btn">
                                 <button class="btn btn-primary" type="submit">
                                     <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search!
@@ -38,3 +38,4 @@
     </div>
 </div>
 </div>
+</section>

@@ -35,8 +35,7 @@
                             <div class="col-md-12">
                                 <p>Please write a post.</p>
                                         </tr>
-                                    <?php endforeach ?>
-                                </tbody>
+                                </body>
                             </table>
                         </div>
                     </div>

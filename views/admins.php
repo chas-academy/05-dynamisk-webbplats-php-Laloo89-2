@@ -1,17 +1,18 @@
 <?php
   include_once("../templates/header.html");
   include_once("../templates/navigation.html");
+  include_once("../templates/post.html");
   include_once("../templates/footer.html");
-  include_once("myposts.php"); 
+  include_once("admins.php");
   ?>
-
-<section class="jumbotron text-center">
+<section class="wrapper">
+  <section class="jumbotron text-center">
   <div class="container">
       <h1 class="jumbotron-heading">My Posts</h1>
       <p class="lead text-muted">Create a new post:</p>
      
   </div>
-</section>
+  </section>
 
 <div class="album text-muted">
   <div class="container">
@@ -24,3 +25,4 @@
     </div>
   </div>
 </div>
+</section>
