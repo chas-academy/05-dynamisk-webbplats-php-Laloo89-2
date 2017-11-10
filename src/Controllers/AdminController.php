@@ -23,6 +23,8 @@ class AdminController extends AbstractController
         }
 
         $email = $params->getString('email');
+        $password = $params->getString('password');
+        
         $adminModel = new AdminModel();
 
         try {
@@ -38,6 +40,11 @@ class AdminController extends AbstractController
         $newController = new PostController($this->request);
         $this->redirect('/my-posts');
         return $newController->getAll();
+    }
+
+    public function register() 
+    {
+      return $this->render('views/register.php', []);
     }
 
     public function getAll(): string

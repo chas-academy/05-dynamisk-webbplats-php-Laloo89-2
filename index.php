@@ -17,7 +17,7 @@
   $response = $router->route(new Request());
 
   include_once("templates/header.html");
-  include_once("templates/navigation.html");
+  include_once("templates/navigation.php");
      echo $response;
   include_once("templates/footer.html");
   include_once("views/layout.php");  

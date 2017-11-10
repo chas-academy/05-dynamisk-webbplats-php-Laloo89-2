@@ -25,7 +25,7 @@
             
             ob_start();
             include ($_SERVER['DOCUMENT_ROOT'] . '/templates/header.html');
-            include ($_SERVER['DOCUMENT_ROOT'] . '/templates/navigation.html');
+            include ($_SERVER['DOCUMENT_ROOT'] . '/templates/navigation.php');
           /*  include $view; */
             include ($_SERVER['DOCUMENT_ROOT'] . '/templates/footer.html');
             $renderedView = ob_get_clean();

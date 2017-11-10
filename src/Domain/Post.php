@@ -4,23 +4,19 @@
 
  class Post {
     private $title;
-    private $start;
-    private $end;
+    private $category;
+    private $tag;
 
     public function getTitle(): string {
         return $this->title;
     }
 
-    public function getStartDate() {
-        return $this->start;
+    public function getCategory() {
+        return $this->category;
     }
 
-    public function getEndDate() {
-        return $this->end;
-    }
-
-    private function createPost() {
-        return $this->post;
+    public function getTag() {
+        return $this->tag;
     }
 }
 

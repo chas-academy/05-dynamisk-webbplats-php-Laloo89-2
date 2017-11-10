@@ -7,6 +7,10 @@
      "controller": "Admin",
      "method": "login"
   },
+  "register": {
+    "controller": "Admin",
+    "method": "register"
+  },
   "posts/:page": {
     "controller": "Post",
     "method": "getAllWithPage",
