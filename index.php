@@ -1,4 +1,8 @@
 <?php
+ ini_set('display_errors', 1);
+ ini_set('display_startup_errors', 1);
+ error_reporting(E_ALL);
+
   use Myblog\Core\Router;
   use Myblog\Core\Request; 
 
@@ -16,9 +20,10 @@
   $router = new Router();
   $response = $router->route(new Request());
 
+  echo $response;
+
   include_once("templates/header.html");
   include_once("templates/navigation.php");
-     echo $response;
   include_once("templates/footer.html");
   include_once("views/layout.php");  
  

@@ -46,6 +46,14 @@
       "login": true
     }
   },
+  "admin/:create": {
+    "controller": "Admin",
+    "method": "get",
+    "params": {
+      "id": "text",
+      "login": true
+    }
+  },
   "myposts": {
     "controller": "Post",
     "method": "getByPost",
