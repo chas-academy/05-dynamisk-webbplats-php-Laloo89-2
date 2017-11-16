@@ -30,7 +30,7 @@
             <?php else: ?>
               <section class="jumbotron">
                     <div class="container">
-                        <h3 class="text-center">There is no posts <?php echo $admin->getFullName(); ?></h3>
+                        <h3 class="text-center">There is no posts <?php echo $admin->getPosts(); ?></h3>
                         <div class="row text-center">
                             <div class="col-md-12">
                                 <p>Please write a post.</p>

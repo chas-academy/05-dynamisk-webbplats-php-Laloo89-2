@@ -4,8 +4,7 @@
     
     use Myblog\Exceptions\DbException;
     use Myblog\Exceptions\NotFoundException;
-    use Myblog\Models\PostModel;
-    use Myblog\Models\AdminModel;
+    use Myblog\Domain\Post;
 
     class PostController extends AbstractController
     {
@@ -78,6 +77,6 @@
             /*    'isMyPosts' => true */
             ];
 
-            return $this->render('views/posts.php', $properties);
+            return $this->render('views/admins.php', $properties);
         }
     }

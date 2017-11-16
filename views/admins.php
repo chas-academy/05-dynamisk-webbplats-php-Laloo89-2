@@ -1,9 +1,11 @@
 <?php
   include_once("../templates/header.html");
-  include_once("../templates/navigation.php");
+  include_once("../templates/adminnav.html");
   include_once("../templates/footer.html");
+  include_once("../templates/createpost.html");
  
-  use Bookstore\views\register;
+  use Myblog\views\register;
+  use Myblog\templates\createpost;
   ?>
 <section class="wrapper">
   <section class="jumbotron text-center">

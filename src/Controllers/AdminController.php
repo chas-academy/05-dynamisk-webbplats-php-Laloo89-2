@@ -12,14 +12,14 @@ class AdminController extends AbstractController
     {
         if(!$this->request->isPost()) {
             $params = ['errorMessage' => 'You need to login to do that!'];
-            return $this->render('views/login.php', $params);
+            return $this->render('views/error.php', $params);
         }
 
         $params = $this->request->getParams();
 
         if(!$params->has('email')) {
             $params = ['errorMessage' => 'No info provided.'];
-            return $this->render('views/login.php', $params);
+            return $this->render('views/admins.php', $params);
         }
 
         $email = $params->getString('email');
@@ -38,7 +38,7 @@ class AdminController extends AbstractController
         setcookie('user', $admin->getId());
 
         $newController = new PostController($this->request);
-        $this->redirect('/my-posts');
+        $this->redirect('/admins.php');
         return $newController->getAll();
     }
 
@@ -68,10 +68,10 @@ class AdminController extends AbstractController
             $admin = $adminModel->get($adminId);
         } catch (\Exception $e) {
             $properties = ['errorMessage' => 'Admin not found!'];
-            return $this->render('views/admin.php', $properties);
+            return $this->render('views/admins.php', $properties);
         }
 
         $properties = ['admin' => $admin];
-        return $this->render('views/admin.php', $properties);
+        return $this->render('views/admins.php', $properties);
     }
 }

@@ -53,7 +53,7 @@ class Router {
         if (isset($info['login']) && $info['login']) {
             if ($request->getCookies()->has('user')) {
                 $adminId = $request->getCookies()->get('user');
-                $controller->setAdminId($adminId);
+                $controller->setAdminId($admin);
             } else {
                 $errorController = new AdminController($request);
                 return $errorController->login();

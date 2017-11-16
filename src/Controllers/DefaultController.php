@@ -3,6 +3,7 @@
 namespace Myblog\Controllers;
 
 use Myblog\Exceptions\NotFoundException;
+use Myblog\Domain\Admin\AdminFactory;
 
 class DefaultController extends AbstractController
 {
