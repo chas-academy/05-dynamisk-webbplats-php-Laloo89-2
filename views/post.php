@@ -17,3 +17,6 @@
     </div>
   </div>
 </div>
+<?php
+include_once("../templates/createpost.html");
+?>

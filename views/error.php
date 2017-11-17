@@ -14,7 +14,6 @@
             <div class="col-md-12">
                 <a href="http://localhost:8080/" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
                     Back to start </a>
-                <a href="http://localhost:8080/" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-envelope"></span> Contakt support</a>
             </div>
         </div>
     </div>
